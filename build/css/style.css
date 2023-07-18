@@ -1222,6 +1222,10 @@ button,
   color: #15ab07;
 }
 
+.header-intro {
+  background-color: aquamarine;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
