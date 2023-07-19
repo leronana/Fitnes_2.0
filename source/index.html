@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Фитнес центр Supergym">
     <title>Фитнес 2.0</title>
+    <link rel="stylesheet" href="css/style.min.css">
     <link rel="preload" href="fonts/alumni-sans-semibold.woff2" as="font" crossorigin="anonymous" />
     <link rel="preload" href="fonts/roboto-condensed-bold.woff2" as="font" crossorigin="anonymous" />
     <link rel="preload" href="fonts/roboto-condensed-regular.woff2" as="font" crossorigin="anonymous" />
     <link rel="preload" href="fonts/roboto-condensed-light.woff2" as="font" crossorigin="anonymous" />
-    <link rel="stylesheet" href="css/style.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@600;700;800;900&family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet" />
+
   </head>
   <body>
     <div class="wrapper">
@@ -23,7 +25,7 @@
                   <picture>
                     <source media="(min-width: 1200px)" srcset="img/svg/logo.svg" width="122" height="44" />
                     <source media="(min-width: 768px)" srcset="img/svg/logo.svg" width="82" height="17" />
-                    <img src="img/svg/logo.svg" width="69" height="24" alt="Supergym." />
+                    <img src="img/svg/logo-mobile.svg" width="69" height="24" alt="Supergym." />
                   </picture>
                 </a>
               </div>
@@ -51,6 +53,14 @@
               <a class="hero__btn" href="#">Купить абонемент</a>
             </div>
             <div class="hero__img">
+              <picture>
+                <source media="(min-width: 1200px)" type="image/webp" srcset="img/hero/hero-trainer-dekstop.webp, img/hero/hero-trainer-dekstop@2x.webp 2x" />
+                <source media="(min-width: 1200px)" srcset="img/hero/hero-trainer-dekstop.png, img/hero/hero-trainer-dekstop@2x.png 2x" />
+                <source media="(min-width: 768px)" type="image/webp" srcset="img/hero/hero-trainer-tablet.webp, img/hero/hero-trainer-tablet@2x.webp 2x" />
+                <source media="(min-width: 768px)" srcset="o/hero-traiimg/herner-tablet.png, img/hero/hero-trainer-tablet@2x.png 2x" />
+                <source type="image/webp" srcset="img/hero/hero-trainer-tablet.webp, img/hero/hero-trainer-tablet@2x.webp 2x" />
+                <img src="img/hero/hero-trainer-tablet.png" srcset="img/hero/hero-trainer-tablet@2x.png 2x" width="324" height="390" alt="Супер-тренер." />
+            </picture>
             </div>
           </div>
         </section>

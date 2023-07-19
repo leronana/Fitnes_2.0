@@ -577,7 +577,7 @@ button,
   transition: opacity 0.3s ease;
 }
 .btn--red {
-  background-color: #ff1553;
+  background-color: #ed0233;
 }
 .btn:disabled {
   opacity: 0.5;
@@ -1223,7 +1223,129 @@ button,
 }
 
 .header-intro {
-  background-color: aquamarine;
+  background: conic-gradient(from 145deg at 16% 39%, #003D85 32deg, #B80027 313deg, #003D85 360deg);
+}
+
+.header {
+  padding-top: 30px;
+}
+@media (max-width: 1199px) {
+  .header {
+    padding-top: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .header {
+    padding-top: 15px;
+  }
+}
+
+.header__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px 30px;
+}
+
+.header__tel-link {
+  font-weight: 600;
+  font-size: 26px;
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  color: #ffffff;
+  letter-spacing: 0.78px;
+}
+@media (max-width: 1199px) {
+  .header__tel-link {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: normal;
+    letter-spacing: 0.48px;
+  }
+}
+@media (max-width: 767px) {
+  .header__tel-link {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: normal;
+    letter-spacing: 0.4px;
+  }
+}
+
+.hero {
+  color: #ffffff;
+}
+
+@media (max-width: 1199px) {
+  .hero__wrapper {
+    padding-top: 25px;
+  }
+}
+@media (max-width: 767px) {
+  .hero__wrapper {
+    padding-top: 80px;
+  }
+}
+
+.hero__wrapper p {
+  margin: 0;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: normal;
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  letter-spacing: 1.44px;
+}
+@media (max-width: 1199px) {
+  .hero__wrapper p {
+    font-weight: 600;
+    font-size: 34px;
+    letter-spacing: 1.02px;
+  }
+}
+@media (max-width: 767px) {
+  .hero__wrapper p {
+    font-weight: 600;
+    font-size: 28px;
+    letter-spacing: 0.84px;
+  }
+}
+
+.hero__list {
+  list-style-type: none;
+}
+
+.hero__item {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: right;
+}
+
+.hero__wrapper h1 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 92px;
+  line-height: normal;
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  text-align: right;
+  letter-spacing: 4.6px;
+  stroke-width: 50px;
+}
+@media (max-width: 1199px) {
+  .hero__wrapper h1 {
+    font-weight: 600;
+    font-size: 72px;
+    letter-spacing: 3.6px;
+  }
 }
 
 /* @mixin hover-focus {

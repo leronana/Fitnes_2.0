@@ -1,0 +1,65 @@
+.hero {
+  color: $color-default-white;
+}
+
+.hero__wrapper {
+  @include vp-1199 {
+    padding-top: 25px;
+  }
+
+  @include vp-767 {
+    padding-top: 80px;
+  }
+}
+
+.hero__wrapper p {
+  margin: 0;
+
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: normal;
+  font-family: $ff-alumni;
+  letter-spacing: 1.44px;
+
+  @include vp-1199 {
+    font-weight: 600;
+    font-size: 34px;
+    letter-spacing: 1.02px;
+  }
+
+  @include vp-767 {
+    font-weight: 600;
+    font-size: 28px;
+    letter-spacing: 0.84px;
+  }
+}
+
+.hero__list {
+  list-style-type: none;
+}
+
+.hero__item {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: right;
+}
+
+.hero__wrapper h1 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 92px;
+  line-height: normal;
+  font-family: $ff-alumni;
+  text-align: right;
+  letter-spacing: 4.6px;
+  stroke-width: 50px;
+
+  @include vp-1199 {
+    font-weight: 600;
+    font-size: 72px;
+    letter-spacing: 3.6px;
+  }
+}
