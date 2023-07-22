@@ -38,34 +38,75 @@
         <section class="hero">
           <div class="container">
             <div class="hero__wrapper">
-              <p>Омск</p>
               <div class="hero__info">
-                <ul class="hero__list">
-                  <li class="hero__item">Тренажёрный зал</li>
-                  <li class="hero__item">Групповые занятия</li>
-                  <li class="hero__item">Кардио-зона</li>
-                </ul>
-                <h1>
-                  Фитнес <br />
-                  центр
-                </h1>
+                <p>Омск</p>
+                <div class="hero__info-inner">
+                  <ul class="hero__list">
+                    <li class="hero__item">Тренажёрный зал</li>
+                    <li class="hero__item">Групповые занятия</li>
+                    <li class="hero__item">Кардио-зона</li>
+                  </ul>
+                  <h1>
+                    Фитнес <br />
+                    центр
+                  </h1>
+                </div>
+                <button class="hero__btn btn btn--empty" href="#">Купить абонемент</button>
+               </div>
+              <div class="hero__img">
+                <picture>
+                  <source media="(max-width: 768px)" type="image/webp"
+                    srcset="img/hero/hero-trainer-tablet.webp 1x, img/hero/hero-trainer-tablet@2x.webp 2x" />
+                  <source media="(max-width: 768px)"
+                    srcset="img/hero/hero-trainer-tablet.png 1x, img/hero/hero-trainer-tablet@2x.png 2x" width="324" height="390"/>
+
+                  <source type="image/webp"
+                    srcset="img/hero/hero-trainer-tablet.webp 1x, img/hero/hero-trainer-tablet@2x.webp 2x" />
+                  <img src="img/hero/hero-trainer-tablet.png" srcset="img/hero/hero-trainer-tablet@2x.png 2x" width="500"
+                    height="556" alt="Супер-тренер." />
+                </picture>
               </div>
-              <a class="hero__btn" href="#">Купить абонемент</a>
-            </div>
-            <div class="hero__img">
+           </div>
+          </div>
+        </section>
+
+      </div>
+      <main>
+        <section class="gym">
+          <div class="container">
+            <div class="gym__wrapper">
+              <div class="gym__info">
+                <h2>Тренажерный зал</h2>
+                <span>Просторный зал площадью 900 кв/м</span>
+                <p>Supergym&nbsp;&mdash; самый большой фитнес центр за&nbsp;Уралом и&nbsp;идеальное место для укрепления тела
+                  и&nbsp;здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
+                <p>В&nbsp;зале расположены отдельная зона для Crossfit и&nbsp;кардио-зона с&nbsp;40&nbsp;тренажерами. Также
+                  в&nbsp;фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
+              </div>
               <picture>
-                <source media="(min-width: 1200px)" type="image/webp" srcset="img/hero/hero-trainer-dekstop.webp, img/hero/hero-trainer-dekstop@2x.webp 2x" />
-                <source media="(min-width: 1200px)" srcset="img/hero/hero-trainer-dekstop.png, img/hero/hero-trainer-dekstop@2x.png 2x" />
-                <source media="(min-width: 768px)" type="image/webp" srcset="img/hero/hero-trainer-tablet.webp, img/hero/hero-trainer-tablet@2x.webp 2x" />
-                <source media="(min-width: 768px)" srcset="o/hero-traiimg/herner-tablet.png, img/hero/hero-trainer-tablet@2x.png 2x" />
-                <source type="image/webp" srcset="img/hero/hero-trainer-tablet.webp, img/hero/hero-trainer-tablet@2x.webp 2x" />
-                <img src="img/hero/hero-trainer-tablet.png" srcset="img/hero/hero-trainer-tablet@2x.png 2x" width="324" height="390" alt="Супер-тренер." />
-            </picture>
+                <source media="(max-width: 767px)" type="image/webp"
+                  srcset="./img/gym/gym-mobile.webp 1x, ./img/gym/gym-mobile@2x.webp 2x" width="320" height="313">
+                <source media="(max-width: 1199px)" type="image/webp"
+                  srcset="./img/gym/gym-tablet.webp 1x, ./img/gym/gym-tablet@2x.webp 2x" width="678" height="345">
+                <source media="(min-width: 1200px)" type="image/webp" srcset="./img/gym/gym.webp 1x, ./img/gym/gym@2x.webp 2x"
+                  width="660" height="401">
+
+                <source media="(max-width: 767px)" srcset="./img/gym/gym-mobile.png 1x, ./img/gym/gym-mobile@2x.png 2x"
+                  width="320" height="313">
+                <source media="(max-width: 1199px)" srcset="./img/gym/gym-tablet.png 1x, ./img/gym/gym-tablet@2x.png 2x"
+                  width="678" height="345">
+                <img src="./img/gym.png" srcset="./img/gym/gym.png 1x, ./img/gym/gym@2x.png 2x"
+                  alt="Фото спортивного зала с тренажерами." width="660" height="401">
+              </picture>
+              <div class="gym__video-wrapper">
+                <video class="gym__video" preload="auto" playsinline src="./img/gym/gym-video.mp4"
+                  poster="./img/gym/gym-video-poster.webp"></video>
+                <button class="gym__video-btn btn" aria-label="Кнопка воспроизведения видео.">
+                </button>
+              </div>
             </div>
           </div>
         </section>
-      </div>
-      <main>
       </main>
       <footer>
         <div class="container"></div>
