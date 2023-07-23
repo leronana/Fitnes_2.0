@@ -1517,6 +1517,92 @@ button,
   }
 }
 
+.gym {
+  padding-top: 120px;
+  padding-bottom: 235px;
+  color: #102654;
+}
+
+.gym__wrapper {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1366px;
+  padding-left: 60px;
+  -webkit-column-gap: 85px;
+     -moz-column-gap: 85px;
+          column-gap: 85px;
+}
+
+.gym__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 355px;
+  padding-top: 56px;
+  text-align: left;
+}
+
+.gym__info h2 {
+  margin: 0;
+  margin-bottom: 28px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  letter-spacing: 1.44px;
+}
+
+.gym__info span {
+  display: block;
+  margin: 0;
+  margin-bottom: 43px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.gym__info p {
+  margin: 0;
+  margin-bottom: 8px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.gym__video-wrapper {
+  position: absolute;
+  top: 288px;
+  left: 437px;
+}
+
+.gym__video {
+  width: 364px;
+  height: 228px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.gym__video-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100px;
+  height: 100px;
+  background: none url("../img/svg/gym-play-btn.svg") no-repeat;
+  border: none;
+  border-radius: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
