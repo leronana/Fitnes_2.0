@@ -565,60 +565,13 @@ button,
 }
 
 .btn {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 24px 42px;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 14px;
-  font-family: "Roboto-Condensed", "Arial", sans-serif;
-  color: #ffffff;
-  text-transform: uppercase;
-  letter-spacing: 0.6px;
-  background-color: transparent;
-  border: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   cursor: pointer;
   -webkit-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
-}
-@media (hover: hover) {
-  .btn:hover:not(.focus-visible) {
-    opacity: 0.8;
-  }
-}
-.btn.focus-visible:focus {
-  opacity: 0.8;
-}
-.btn--empty {
-  padding: 21px 22px 18px;
-  color: #ffffff;
-  outline: 4px solid #ffffff;
-}
-@media (hover: hover) {
-  .btn--empty:hover:not(.focus-visible) {
-    color: #103aae;
-    background-color: #ffffff;
-  }
-}
-.btn--empty.focus-visible:focus {
-  color: #103aae;
-  background-color: #ffffff;
-}
-.btn--empty.focus-visible:focus {
-  color: #102654;
-}
-.btn--empty.focus-visible:active {
-  color: #102654;
-  background-color: #ffffff;
-}
-.btn--red {
-  background-color: #ed0233;
 }
 .btn:disabled {
   opacity: 0.5;
@@ -1522,6 +1475,17 @@ button,
   padding-bottom: 235px;
   color: #102654;
 }
+@media (max-width: 1199px) {
+  .gym {
+    padding-top: 100px;
+    padding-bottom: 183px;
+  }
+}
+@media (max-width: 767px) {
+  .gym {
+    padding: 70px 0;
+  }
+}
 
 .gym__wrapper {
   position: relative;
@@ -1533,6 +1497,15 @@ button,
   -webkit-column-gap: 85px;
      -moz-column-gap: 85px;
           column-gap: 85px;
+}
+@media (max-width: 1199px) {
+  .gym__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0;
+  }
 }
 
 .gym__info {
@@ -1547,6 +1520,22 @@ button,
   padding-top: 56px;
   text-align: left;
 }
+@media (max-width: 1199px) {
+  .gym__info {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    padding: 0 88px;
+    text-align: center;
+  }
+}
+@media (max-width: 767px) {
+  .gym__info {
+    text-align: left;
+    padding: 0 15px;
+  }
+}
 
 .gym__info h2 {
   margin: 0;
@@ -1556,6 +1545,21 @@ button,
   font-size: 48px;
   font-family: "Alumni Sans", "Arial", sans-serif;
   letter-spacing: 1.44px;
+}
+@media (max-width: 1199px) {
+  .gym__info h2 {
+    margin-bottom: 16px;
+    padding-top: 14px;
+    font-size: 42px;
+    letter-spacing: 1.26px;
+  }
+}
+@media (max-width: 767px) {
+  .gym__info h2 {
+    margin-bottom: 17px;
+    padding: 0;
+    font-size: 32px;
+  }
 }
 
 .gym__info span {
@@ -1567,6 +1571,16 @@ button,
   font-size: 18px;
   line-height: 18px;
 }
+@media (max-width: 1199px) {
+  .gym__info span {
+    margin-bottom: 38px;
+  }
+}
+@media (max-width: 767px) {
+  .gym__info span {
+    margin-bottom: 28px;
+  }
+}
 
 .gym__info p {
   margin: 0;
@@ -1575,11 +1589,42 @@ button,
   font-size: 16px;
   line-height: 24px;
 }
+@media (max-width: 1199px) {
+  .gym__info p {
+    margin-bottom: 44px;
+  }
+}
+@media (max-width: 767px) {
+  .gym__info p {
+    margin-bottom: 35px;
+    padding-right: 27px;
+  }
+}
+@media (max-width: 1199px) {
+  .gym__info p:last-child {
+    display: none;
+  }
+}
 
 .gym__video-wrapper {
   position: absolute;
   top: 288px;
   left: 437px;
+}
+@media (max-width: 1199px) {
+  .gym__video-wrapper {
+    top: auto;
+    bottom: -83px;
+    left: 206px;
+  }
+}
+@media (max-width: 767px) {
+  .gym__video-wrapper {
+    position: relative;
+    top: auto;
+    left: auto;
+    bottom: auto;
+  }
 }
 
 .gym__video {
@@ -1587,6 +1632,12 @@ button,
   height: 228px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+@media (max-width: 1199px) {
+  .gym__video {
+    width: 266px;
+    height: 167px;
+  }
 }
 
 .gym__video-btn {
