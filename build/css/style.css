@@ -1532,8 +1532,12 @@ button,
 }
 @media (max-width: 767px) {
   .gym__info {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    padding: 0;
+    padding-right: 11px;
     text-align: left;
-    padding: 0 15px;
   }
 }
 
@@ -1597,12 +1601,40 @@ button,
 @media (max-width: 767px) {
   .gym__info p {
     margin-bottom: 35px;
-    padding-right: 27px;
+    padding-right: 20px;
   }
 }
 @media (max-width: 1199px) {
   .gym__info p:last-child {
     display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .gym__img-wrapper {
+    margin-right: -15px;
+    margin-left: -15px;
+    margin-bottom: 39px;
+  }
+}
+
+.gym__img-wrapper img {
+  background-color: #f8f9fc;
+  width: 660px;
+  height: 401px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (max-width: 767px) {
+  .gym__img-wrapper img {
+    width: 100vw;
+    height: 100%;
+  }
+}
+@media (max-width: 1199px) {
+  .gym__img-wrapper img {
+    width: 678px;
+    height: 345px;
   }
 }
 
@@ -1622,8 +1654,10 @@ button,
   .gym__video-wrapper {
     position: relative;
     top: auto;
-    left: auto;
     bottom: auto;
+    left: auto;
+    margin-left: -15px;
+    margin-right: -15px;
   }
 }
 
@@ -1636,6 +1670,12 @@ button,
 @media (max-width: 1199px) {
   .gym__video {
     width: 266px;
+    height: 167px;
+  }
+}
+@media (max-width: 767px) {
+  .gym__video {
+    width: 100vw;
     height: 167px;
   }
 }
@@ -1652,6 +1692,126 @@ button,
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+@media (hover: hover) {
+  .gym__video-btn:hover:not(.focus-visible) {
+    background-image: url("../img/svg/gym-play-hover-focus.svg");
+  }
+}
+.gym__video-btn.focus-visible:focus {
+  background-image: url("../img/svg/gym-play-hover-focus.svg");
+}
+.gym__video-btn:disabled {
+  background-image: url("../img/svg/gym-play-disabled.svg");
+  pointer-events: none;
+}
+
+.footer {
+  padding-top: 34px;
+  padding-bottom: 34px;
+  color: #ffffff;
+  background-color: #030a1a;
+}
+@media (max-width: 1199px) {
+  .footer {
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+}
+
+.footer__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  max-width: 1366px;
+}
+
+.footer__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-top: 8px;
+}
+@media (max-width: 1199px) {
+  .footer__logo {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0;
+  }
+}
+
+.footer__list-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 480px;
+  margin: 0;
+  padding-left: 50px;
+  list-style-type: none;
+  -webkit-column-gap: 40px;
+     -moz-column-gap: 40px;
+          column-gap: 40px;
+}
+@media (max-width: 1199px) {
+  .footer__list-info {
+    padding-left: 54px;
+    -webkit-column-gap: 30px;
+       -moz-column-gap: 30px;
+            column-gap: 30px;
+  }
+}
+
+.footer__link {
+  font-weight: 400;
+  font-size: 14px;
+  color: inherit;
+}
+
+.footer__social-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  list-style-type: none;
+  gap: 11px;
+}
+
+.footer__social-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 25px;
+  height: 25px;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.footer__social-list svg {
+  width: 14px;
+  height: 14px;
 }
 
 /* @mixin hover-focus {

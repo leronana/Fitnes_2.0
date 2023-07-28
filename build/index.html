@@ -83,21 +83,23 @@
                 <p>В&nbsp;зале расположены отдельная зона для Crossfit и&nbsp;<br/>кардио-зона с&nbsp;40&nbsp;тренажерами. Также
                   в&nbsp;фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
               </div>
-              <picture>
-                <source media="(max-width: 767px)" type="image/webp"
-                  srcset="./img/gym/gym-mobile.webp 1x, ./img/gym/gym-mobile@2x.webp 2x" width="320" height="313">
-                <source media="(max-width: 1199px)" type="image/webp"
-                  srcset="./img/gym/gym-tablet.webp 1x, ./img/gym/gym-tablet@2x.webp 2x" width="678" height="345">
-                <source media="(min-width: 1200px)" type="image/webp" srcset="./img/gym/gym.webp 1x, ./img/gym/gym@2x.webp 2x"
-                  width="660" height="401">
+              <div class="gym__img-wrapper">
+                <picture>
+                  <source media="(max-width: 767px)" type="image/webp"
+                    srcset="./img/gym/gym-mobile.webp 1x, ./img/gym/gym-mobile@2x.webp 2x" width="320" height="313">
+                  <source media="(max-width: 1199px)" type="image/webp"
+                    srcset="./img/gym/gym-tablet.webp 1x, ./img/gym/gym-tablet@2x.webp 2x" width="678" height="345">
+                  <source media="(min-width: 1200px)" type="image/webp" srcset="./img/gym/gym.webp 1x, ./img/gym/gym@2x.webp 2x"
+                    width="660" height="401">
 
-                <source media="(max-width: 767px)" srcset="./img/gym/gym-mobile.png 1x, ./img/gym/gym-mobile@2x.png 2x"
-                  width="320" height="313">
-                <source media="(max-width: 1199px)" srcset="./img/gym/gym-tablet.png 1x, ./img/gym/gym-tablet@2x.png 2x"
-                  width="678" height="345">
-                <img src="./img/gym/gym.png" srcset="./img/gym/gym.png 1x, ./img/gym/gym@2x.png 2x"
-                  alt="Фото спортивного зала с тренажерами." width="660" height="401">
-              </picture>
+                  <source media="(max-width: 767px)" srcset="./img/gym/gym-mobile.png 1x, ./img/gym/gym-mobile@2x.png 2x" width="320"
+                    height="313">
+                  <source media="(max-width: 1199px)" srcset="./img/gym/gym-tablet.png 1x, ./img/gym/gym-tablet@2x.png 2x" width="678"
+                    height="345">
+                  <img src="./img/gym/gym.png" srcset="./img/gym/gym.png 1x, ./img/gym/gym@2x.png 2x"
+                    alt="Фото спортивного зала с тренажерами." width="660" height="401">
+                </picture>
+              </div>
               <div class="gym__video-wrapper">
                 <video class="gym__video" preload="auto" playsinline src="./img/gym/gym-video.mp4"
                   poster="./img/gym/gym-video-poster.png"></video>
@@ -108,8 +110,59 @@
           </div>
         </section>
       </main>
-      <footer>
-        <div class="container"></div>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__wrapper">
+            <a class="footer__logo" href="index.html" aria-label="Логотип спортзала SUPERGYM">
+              <picture>
+                <source media="(max-width: 767px)" srcset="./img/svg/logo.svg" width="68" height="15">
+                <source media="(max-width: 1199px)" srcset="./img/svg/logo.svg" width="80" height="18">
+                <img src="./img/svg/logo.svg" alt="" width="88" height="32">
+              </picture>
+            </a>
+            <ul class="footer__list-info">
+              <li class="footer__item">
+                <a href="#" class="footer__link">Услуги</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Абонементы</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Акции</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Тренеры</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Расписание</a>
+              </li>
+            </ul>
+            <ul class="footer__social-list">
+              <li class="footer__social-item">
+                <a class="footer__social-link" href="#" tabindex="0">
+                  <svg width="22" height="22">
+                    <use href="img/sprite.svg#vk"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a class="footer__social-link" href="#" tabindex="0">
+                  <svg width="22" height="22">
+                    <use href="img/sprite.svg#ok"></use>
+                  </svg>
+                </a>
+
+              </li>
+              <li class="footer__social-item">
+                <a class="footer__social-link" href="#" tabindex="0">
+                  <svg width="22" height="22">
+                    <use href="img/sprite.svg#reddit"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </footer>
     </div>
     <script src="js/vendor.min.js"></script>
