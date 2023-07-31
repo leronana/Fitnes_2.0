@@ -153,8 +153,9 @@
   &:hover,
   &:focus-visible {
     background-color: $color-egyptian-blue;
-    fill: $color-default-white;
     outline: none;
+
+    fill: $color-default-white;
   }
 
   &:active {
@@ -163,8 +164,10 @@
 
   &:disabled {
     background-color: #474c57;
-    fill: $color-black-russian;
+
     pointer-events: none;
+
+    fill: $color-black-russian;
   }
 }
 
