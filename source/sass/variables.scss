@@ -27,9 +27,7 @@ $color-gradient-dekstop: conic-gradient(from 145deg at 16% 39%, #003D85 32deg, #
 $color-border-gradient: linear-gradient(142.51deg, #d10a42 0, #0041ca 87.33%);
 $color-button-gradient: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
 
-$color-main-gradient: conic-gradient(from 130.31deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
-$color-main-gradient-tablet: conic-gradient(from 139.4deg at 20.7% 35.74%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
-$color-main-gradient-mobile: conic-gradient(from 171.43deg at 35.31% 34.22%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
+$color-main-gradient: conic-gradient(from 90deg at 16.03% 39.06%, #b80027, #003d85 62deg, #b80027 335deg);
 
 // Typography
 $ff-roboto: "Roboto-Condensed", "Arial", sans-serif;

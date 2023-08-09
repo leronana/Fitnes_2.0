@@ -3,6 +3,7 @@
 
 @import "vendor/normalize";
 @import "blocks/data-tabs.scss";
+@import "vendor/data-accordion.scss";
 // Swiper 7.4.1
 // @import "vendor/swiper";
 
@@ -24,7 +25,6 @@
 @import "blocks/custom-input";
 @import "blocks/custom-toggle";
 @import "blocks/custom-select";
-@import "blocks/header-intro.scss";
 @import "blocks/header.scss";
 @import "blocks/hero.scss";
 @import "blocks/gym.scss";
@@ -38,7 +38,8 @@
 @import "blocks/rewiews.scss";
 @import "blocks/trainers.scss";
 @import "blocks/subscription.scss";
-
+@import "blocks/faq.scss";
+@import "blocks/accordion.scss";
 
 
 
