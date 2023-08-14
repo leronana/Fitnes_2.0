@@ -135,18 +135,17 @@
   background-color: $color-ghost-white;
   width: 660px;
   height: 401px;
-
-  @include vp-767 {
-    width: 100vw;
-    height: 100%;
-  }
+  object-fit: cover;
 
   @include vp-1199 {
     width: 678px;
     height: 345px;
   }
 
-  object-fit: cover;
+  @include vp-767 {
+    width: 100vw;
+    height: 313px;
+  }
 }
 
 .gym__video-wrapper {

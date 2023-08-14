@@ -177,7 +177,7 @@
   }
 }
 
-.trainers__slide>p {
+.trainers__slide > p {
   position: absolute;
   bottom: 10px;
   left: 0;
@@ -197,7 +197,7 @@
   }
 }
 
-.trainers__slide:hover>p {
+.trainers__slide:hover > p {
   display: none;
 }
 
@@ -228,14 +228,13 @@
 
   font-size: 14px;
   line-height: 22px;
-
 }
 
 .trainers__slide:hover .trainers__info {
   display: block;
 }
 
-.trainers__info>p {
+.trainers__info > p {
   position: static;
   margin: 0 0 2px;
   font-weight: 700;

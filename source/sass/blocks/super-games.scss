@@ -1,12 +1,13 @@
+
 .super-games {
   padding: 120px 0 58px;
 
   @include vp-1199 {
-    padding: 100px 0;
+    padding: 100px 45px;
   }
 
   @include vp-767 {
-    padding: 69px 0 60px;
+    padding: 69px 15px 60px;
   }
 }
 
@@ -14,9 +15,9 @@
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
+  max-width: 1366px;
 
-  margin-left: -130px;
-  margin-right: -130px;
+  margin: 0 auto;
 
   @include vp-1199 {
     margin-left: 0;
@@ -112,8 +113,6 @@
       width: 42px;
     }
   }
-
-
 }
 
 .super-games__date dd {

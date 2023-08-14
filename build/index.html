@@ -8,6 +8,7 @@
   <meta name="description" content="Фитнес центр Supergym">
   <title>Фитнес 2.0</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="icon" type="image/png" sizes="120x120" href="./img/favicon.png">
   <link rel="preload" href="fonts/alumni-sans-semibold.woff2" as="font" crossorigin="anonymous" />
   <link rel="preload" href="fonts/roboto-condensed-bold.woff2" as="font" crossorigin="anonymous" />
   <link rel="preload" href="fonts/roboto-condensed-regular.woff2" as="font" crossorigin="anonymous" />
@@ -101,7 +102,7 @@
           </div>
         </div>
       </section>
-      <section class="subscription">
+      <section class="subscription" id="subscription">
         <div class="subscription__wrapper">
           <h3>Абонементы</h3>
           <div class="subscription__tabs" data-tabs="parent" data-delay="100" data-height="max">
@@ -203,7 +204,6 @@
         </div>
       </section>
       <section class="super-games">
-        <div class="container">
           <div class="super-games__wrapper">
             <div class="super-games__info">
               <h2>SUPER<br>GAMES</h2>
@@ -240,9 +240,8 @@
                 height="500" alt="Фото спортсмена с разлетающимся тальком." loading="lazy">
             </picture>
           </div>
-        </div>
       </section>
-      <section class="main__trainers trainers" id="trainers">
+      <section class="trainers" id="trainers">
         <div class="trainers__wrapper">
           <h3>Тренеры</h3>
           <div class="trainers__swiper swiper">
@@ -577,8 +576,7 @@
           </div>
         </div>
       </section>
-      <section class="promotion">
-        <div class="container">
+      <section class="promotion" id="promotion">
           <h3>Акции</h3>
           <div class="promotion__wrapper">
             <div class="promotion__promo">
@@ -620,10 +618,8 @@
               <a class="promotion__card-btn btn" href="#">Подробнее</a>
             </div>
           </div>
-        </div>
       </section>
       <section class="faq">
-        <div class="container">
           <div class="faq__wrapper">
             <h3>Вопросы и ответы</h3>
             <div class="faq__tabs" data-tabs="parent" data-delay="300" data-height="max">
@@ -861,7 +857,6 @@
               </div>
             </div>
           </div>
-        </div>
       </section>
       <section class="reviews">
         <div class="reviews__wrapper">
@@ -1012,7 +1007,6 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="container">
         <div class="footer__wrapper">
           <a class="footer__logo" href="index.html" aria-label="Логотип спортзала SUPERGYM">
             <picture>
@@ -1026,13 +1020,13 @@
               <a href="#" class="footer__link">Услуги</a>
             </li>
             <li class="footer__item">
-              <a href="#" class="footer__link">Абонементы</a>
+              <a href="#subscription" class="footer__link">Абонементы</a>
             </li>
             <li class="footer__item">
-              <a href="#" class="footer__link">Акции</a>
+              <a href="#promotion" class="footer__link">Акции</a>
             </li>
             <li class="footer__item">
-              <a href="#" class="footer__link">Тренеры</a>
+              <a href="#trainers" class="footer__link">Тренеры</a>
             </li>
             <li class="footer__item">
               <a href="#" class="footer__link">Расписание</a>
@@ -1052,7 +1046,6 @@
                   <use href="img/sprite.svg#ok"></use>
                 </svg>
               </a>
-
             </li>
             <li class="footer__social-item">
               <a class="footer__social-link" href="#" tabindex="0">
@@ -1063,7 +1056,6 @@
             </li>
           </ul>
         </div>
-      </div>
     </footer>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
