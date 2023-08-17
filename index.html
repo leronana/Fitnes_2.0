@@ -15,18 +15,13 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@600;700;800;900&family=Roboto+Condensed:wght@300;400;700&display=swap"
     rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
 </head>
 <body>
   <div class="wrapper">
     <header class="header">
       <div class="header__wrapper">
         <a href="index.html" class="header__logo" aria-label="Логотип спортзала SUPERGYM">
-          <picture>
-            <source media="(max-width: 767px)" srcset="./img/sprite/logo.svg" width="69" height="24">
-            <source media="(max-width: 1199px)" srcset="./img/sprite/logo.svg" width="82" height="17">
-            <img src="./img/sprite/logo.svg" alt="Логотип спортзала SUPERGYM." width="122" height="44">
-          </picture>
+          <img src="./img/sprite/logo.svg" alt="Логотип спортзала SUPERGYM." width="122" height="44">
         </a>
         <a class="header__tel" href="tel:88005555555">8-800-555-55-55</a>
       </div>
@@ -573,24 +568,26 @@
               <p>Безлимитный абонемент в&nbsp;тренажерный зал</p>
               <a class="promotion__promo-btn btn" href="#">Подробнее</a>
             </div>
-            <picture>
-              <source media="(max-width: 767px)" type="image/webp"
-                srcset="./img/promotion/promotion-mobile.webp 1x, ./img/promotion/promotion-mobile@2x.webp 2x"
-                width="290" height="299">
-              <source media="(max-width: 1199px)" type="image/webp"
-                srcset="./img/promotion/promotion-tablet.webp 1x, ./img/promotion/promotion-tablet@2x.webp 2x"
-                width="399" height="462">
-              <source type="image/webp" srcset="./img/promotion/promotion.webp 1x, ./img/promotion/promotion@2x.webp 2x"
-                width="280" height="462">
-              <source media="(max-width: 767px)"
-                srcset="./img/promotion/promotion-mobile.png 1x, ./img/promotion/promotion-mobile@2x.png 2x" width="290"
-                height="299">
-              <source media="(max-width: 1199px)"
-                srcset="./img/promotion-tablet.png 1x, ./img/promotion-tablet@2x.png 2x" width="399" height="462">
-              <img src="./img/promotion/promotion.png"
-                srcset="./img/promotion/promotion.png 1x, ./img/promotion/promotion@2x.png 2x"
-                alt="Фото спортивной девушки." width="280" height="462" loading="lazy">
-            </picture>
+            <div class="promotion__img">
+              <picture>
+                <source media="(max-width: 767px)" type="image/webp"
+                  srcset="./img/promotion/promotion-mobile.webp 1x, ./img/promotion/promotion-mobile@2x.webp 2x" width="290"
+                  height="299">
+                <source media="(max-width: 1199px)" type="image/webp"
+                  srcset="./img/promotion/promotion-tablet.webp 1x, ./img/promotion/promotion-tablet@2x.webp 2x" width="399"
+                  height="462">
+                <source type="image/webp" srcset="./img/promotion/promotion.webp 1x, ./img/promotion/promotion@2x.webp 2x"
+                  width="280" height="462">
+                <source media="(max-width: 767px)"
+                  srcset="./img/promotion/promotion-mobile.png 1x, ./img/promotion/promotion-mobile@2x.png 2x" width="290"
+                  height="299">
+                <source media="(max-width: 1199px)" srcset="./img/promotion-tablet.png 1x, ./img/promotion-tablet@2x.png 2x"
+                  width="399" height="462">
+                <img src="./img/promotion/promotion.png"
+                  srcset="./img/promotion/promotion.png 1x, ./img/promotion/promotion@2x.png 2x" alt="Фото спортивной девушки."
+                  width="280" height="462" loading="lazy">
+              </picture>
+            </div>
           </div>
           <div class="promotion__card">
             <h4>Месяц бесплатно</h4>
@@ -973,11 +970,7 @@
     <footer class="footer">
       <div class="footer__wrapper">
         <a class="footer__logo" href="index.html" aria-label="Логотип спортзала SUPERGYM">
-          <picture>
-            <source media="(max-width: 767px)" srcset="./img/svg/logo.svg" width="68" height="15">
-            <source media="(max-width: 1199px)" srcset="./img/svg/logo.svg" width="80" height="18">
-            <img src="./img/svg/logo.svg" alt="Логотип спортзала SUPERGYM" width="88" height="32">
-          </picture>
+          <img src="./img/svg/logo.svg" alt="Логотип спортзала SUPERGYM" width="88" height="32">
         </a>
         <ul class="footer__list-info">
           <li class="footer__item">
@@ -1022,7 +1015,6 @@
       </div>
     </footer>
   </div>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script src="js/vendor.min.js"></script>
   <script src="js/main.min.js"></script>
 </body>

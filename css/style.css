@@ -2907,11 +2907,9 @@ button,
   opacity: 1;
 }
 
-.promotion img {
+.promotion__img {
   height: 100%;
   background-color: #103aae;
-  -o-object-fit: fill;
-  object-fit: fill;
 }
 
 .super-games {
@@ -4096,6 +4094,7 @@ button,
 
   .header img {
     height: 17px;
+    width: 82px;
   }
 
   .header__tel {
@@ -4219,6 +4218,7 @@ button,
 
   .footer__logo img {
     height: 18px;
+    width: 80px;
   }
 
   .footer__list-info {
@@ -4721,6 +4721,7 @@ button,
 
   .header img {
     height: 24px;
+    width: 69px;
   }
 
   .header__tel {
@@ -4854,6 +4855,7 @@ button,
 
   .footer__logo img {
     height: 15px;
+    width: 68px;
   }
 
   .footer__list-info {
